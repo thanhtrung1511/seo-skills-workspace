@@ -1,11 +1,11 @@
 ---
-name: content-score
-description: Chấm điểm một bài viết nha khoa theo checklist content chuẩn của Dr. Care (65 tiêu chí, thang 100, ≥80 là đạt) và trả về nhận xét ưu điểm / nhược điểm / vấn đề cần cải thiện. Dùng skill này khi user gõ /content-score hoặc đưa một URL bài viết và muốn "chấm điểm bài viết", "chấm content", "đánh giá bài viết theo checklist", "review content nha khoa", "audit bài viết", "kiểm tra bài viết đạt chuẩn chưa", "cho điểm bài", "content này bao nhiêu điểm", "bài này đạt chưa". Kể cả khi user chỉ dán một link bài nha khoa/y khoa và hỏi "được chưa" hay "ổn chưa", hãy dùng skill này để chấm theo checklist.
+name: content-score-nganhnhakhoa
+description: Chấm điểm một bài viết nha khoa theo checklist content chuẩn của Dr. Care (65 tiêu chí, thang 100, ≥80 là đạt) và trả về nhận xét ưu điểm / nhược điểm / vấn đề cần cải thiện. Dùng skill này khi user gõ /content-score-nganhnhakhoa hoặc đưa một URL bài viết và muốn "chấm điểm bài viết", "chấm content", "đánh giá bài viết theo checklist", "review content nha khoa", "audit bài viết", "kiểm tra bài viết đạt chuẩn chưa", "cho điểm bài", "content này bao nhiêu điểm", "bài này đạt chưa". Kể cả khi user chỉ dán một link bài nha khoa/y khoa và hỏi "được chưa" hay "ổn chưa", hãy dùng skill này để chấm theo checklist.
 ---
 
 # Content Score — Chấm điểm content nha khoa theo checklist Dr. Care
 
-Khi user gọi `/content-score` hoặc đưa URL bài viết cần chấm, thực hiện đúng workflow dưới đây. Mục tiêu: đọc bài, chấm theo **checklist 65 tiêu chí** (nhúng trong skill), tính **điểm trên thang 100** (≥80 = ĐẠT), và đưa nhận xét hành động được.
+Khi user gọi `/content-score-nganhnhakhoa` hoặc đưa URL bài viết cần chấm, thực hiện đúng workflow dưới đây. Mục tiêu: đọc bài, chấm theo **checklist 65 tiêu chí** (nhúng trong skill), tính **điểm trên thang 100** (≥80 = ĐẠT), và đưa nhận xét hành động được.
 
 Checklist đầy đủ + trọng số + cách chấm nằm ở [references/checklist.md](references/checklist.md). **Đọc file đó trước khi chấm** — đừng chấm theo trí nhớ, vì thang điểm và trọng số nằm trong đó.
 
