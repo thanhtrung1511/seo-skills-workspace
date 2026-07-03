@@ -1,6 +1,6 @@
 # SEO Skills Workspace — Claude Code
 
-Không gian làm việc cá nhân gồm **4 Claude Code Skills** phục vụ công việc SEO,
+Không gian làm việc cá nhân gồm **3 Claude Code Skills** phục vụ công việc SEO,
 đặt trong `.claude/skills/`. Dùng cho bài tập: *"Xây 1 không gian làm việc cá
 nhân với ít nhất 3 skills"*.
 
@@ -11,11 +11,10 @@ nhân với ít nhất 3 skills"*.
 | **content-score-nganhnhakhoa** | `/content-score-nganhnhakhoa` | Nhập URL bài nha khoa → chấm 65 tiêu chí checklist Dr. Care → điểm /100 (≥80 đạt) + nhận xét ưu/nhược/cần cải thiện | ✅ HTTP fetch trang ngoài (CLI/API) | ✅ `references/` + `scripts/` |
 | **content-outline** | `/content-outline` | Nhập 1 keyword → search intent + dàn ý H1/H2/H3 + FAQ chuẩn SEO | ✅ **Google Suggest API** | ✅ `scripts/` |
 | **meta-writer** | `/meta-writer` | Chủ đề + keyword → 3 phương án title & meta description (đếm ký tự, đúng chuẩn độ dài) | — | — |
-| **schema-gen** | `/schema-gen` | Loại trang + thông tin → JSON-LD schema.org (Article/Product/FAQ/LocalBusiness…) | — | — |
 
 ## Đối chiếu yêu cầu bài tập
 
-- ✅ **≥ 3 skills**: có 4 skills trong `.claude/skills/`.
+- ✅ **≥ 3 skills**: có 3 skills trong `.claude/skills/`.
 - ✅ **≥ 1 skill kết nối nền tảng ngoài (API/MCP/CLI)**:
   - `content-outline` gọi **Google Suggest API** qua script Python (`scripts/fetch_related_keywords.py`) để lấy từ khóa & câu hỏi PAA thật.
   - `content-score-nganhnhakhoa` kết nối HTTP tới website ngoài để bóc tách tín hiệu SEO (`scripts/extract_seo_signals.py`).
@@ -37,8 +36,7 @@ seo-skills-workspace/
 │       ├── content-outline/
 │       │   ├── SKILL.md
 │       │   └── scripts/fetch_related_keywords.py
-│       ├── meta-writer/SKILL.md
-│       └── schema-gen/SKILL.md
+│       └── meta-writer/SKILL.md
 └── outputs/                # file output mẫu từ việc chạy skill
     ├── content-score_elitedental_implant.md
     ├── content-score_drcare_ngam-rang.md
@@ -48,10 +46,10 @@ seo-skills-workspace/
 ## Cách dùng
 
 1. Mở thư mục này bằng Claude Code (`claude` trong terminal tại đây).
-2. Gõ `/` để thấy 4 lệnh skill, hoặc gọi trực tiếp, ví dụ:
+2. Gõ `/` để thấy 3 lệnh skill, hoặc gọi trực tiếp, ví dụ:
    - `/content-score-nganhnhakhoa https://…` — chấm điểm một bài viết.
    - `/content-outline "trồng răng implant"` — dựng dàn ý.
-   - `/meta-writer` / `/schema-gen` — theo hướng dẫn trong skill.
+   - `/meta-writer` — theo hướng dẫn trong skill.
 
 ### Chạy trực tiếp script kết nối ngoài (không qua skill)
 
