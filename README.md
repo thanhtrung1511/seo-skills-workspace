@@ -43,6 +43,11 @@ seo-skills-workspace/
     └── content-outline_trong-rang-implant.md
 ```
 
+## Video demo
+
+Video quay màn hình chạy skill (Google Drive):
+👉 https://drive.google.com/file/d/1UbrFsxh_nqYqFlRPAimpfZiB7nyNpTwR/view?usp=sharing
+
 ## Cách dùng
 
 1. Mở thư mục này bằng Claude Code (`claude` trong terminal tại đây).
